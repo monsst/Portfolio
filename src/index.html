@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mons Stenbråten Portfolio</title>
+  <link rel="icon" href="assets/MonsStenbråten.jpg">
+  <link rel="stylesheet" href="output.css">
+  <style>
+    #navMenu {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 0 50px 50px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex min:h-fit">
+    <!-- Nav Menu -->
+    <div class="flex bg-[#56082c]/90 pl-2 pr-1 hover:pr-2 py-5" id="navMenu">
+      <div class="divide-y">
+        <div class="hover:scale-110 transition-transform ease-in-out">
+          <a href="#section1" class="text-gray-50 ">About Me</a>
+        </div>
+        <div class="hover:scale-110 transition-transform ease-in-out">
+          <a href="#section2" class="text-gray-50">Smart Fridge</a>
+        </div>
+        <div class="hover:scale-110 transition-transform ease-in-out">
+          <a href="#section3" class="text-gray-50">Avgangsutstilling 2023</a>
+        </div>
+        <div class="hover:scale-110 transition-transform ease-in-out">
+          <a href="#section4" class="text-gray-50">Bachelor, Yggdrasil</a>
+        </div>
+      </div>
+      <div class="absolute top-1/2 right-1 transform -translate-y-1/2" id="expandIcon">
+        <img src="assets/drag.png" alt="Icon that shows that the div can expand" class="h-[40px]">
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="flex-grow bg-[url('assets/pc.jpg')] h-[900px] bg-cover p-4 shadow-[0_10px_3px_0_rgba(0,0,0,0.75)]">
+      <h1 class="text-gray-50 text-center text-6xl">Porfolio</h1>
+      <h2 class="text-gray-50 text-center text-4xl mb-5">Mons Stenbråten</h2>
+      <img src="assets/MonsStenbråten.jpg" alt="Image of me, Mons Stenbråten"
+        class="flex h-[250px] rounded-full m-auto">
+      <div class="bg-[#56082c]/90 w-1/2 mx-auto mt-4 p-2 rounded">
+        <h3 class="text-gray-50 text-center text-3xl mb-2">Fullstack Developer</h3>
+        <p class="text-gray-50 text-center text-2xl mb-5">HTML, CSS, JavaScript, XML, React, MySQL, PHP</p>
+        <p class="text-gray-50 text-center text-2xl mb-2">Contact Me:</p>
+        <div class="flex justify-center">
+          <a href="mailto:mons.stenbraaten@hotmail.com">
+            <img src="assets/email.png" alt="My Email" class="transition ease-in-out hover:scale-110 mx-2">
+          </a>
+          <a href="https://www.linkedin.com/in/mons-stenbr%C3%A5ten-375685265/" target="_blank">
+            <img src="assets/linkedin.svg" alt="My LinkedIn" class="transition ease-in-out hover:scale-110 mx-2">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1500px;">
+    <!-- About Me -->
+    <div id="section1" class="h-[500px] bg-gradient-to-b from-black to-[#256765] p-10">
+      <div class="w-1/2 mx-auto">
+        <h3 class="text-center text-gray-50 text-3xl mb-2">About me:</h3>
+        <p class="text-gray-50">
+          Hello, my name is Mons, I am 22 years old, and I come from Brandbu, Hadeland. I am currently in my final year
+          of my bachelor's degree in web development (BWU) at NTNU in Gjøvik. Since I was young, I have always felt a
+          great enthusiasm for technology. I was fascinated by all the exciting things that could be achieved through
+          science and innovation. This fascination has always driven me, and I have always had a deep desire to
+          contribute to shaping the future of human technological development. These thoughts led me to choose to study
+          web development because I see the potential it can have on the world as digital integration with people
+          becomes more and more prominent. Throughout these three years, I have gained a lot of knowledge in front-end
+          and back-end technologies and UX. In my free time, I enjoy gaming and having fun, AI, and science, and I would
+          love to engage others in my interests. I work well in teams but can also work independently. If you see
+          potential in me, please feel free to contact me!
+        </p>
+      </div>
+    </div>
+    <!-- Smart Fridge -->
+    <div id="section2" class="flex h-[500px] bg-gradient-to-b from-[#256765] to-[#f58150] p-10  items-center">
+      <img src="assets/smartFridge.jpg" alt="Image of my first project Smart Fridge" class="h-[300px]">
+      <div
+        class="px-6 py-4 bg-[url('assets/shapesSF.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
+        <h3 class="text-center text-gray-50 text-3xl mb-2">Project 1: Smartfridge</h3>
+        <p class="text-gray-50">
+          I created this project together with my group as a prototype, along with a proof of concept website. It aimed
+          to simulate an app that could be used to scan items placed in the refrigerator. The idea was that by being
+          able to see an overview of the refrigerator's contents, one could limit purchases of items already present in
+          the fridge that might have been forgotten. This could help reduce food waste. Originally, the plan was to use
+          a Raspberry Pi connected to a scanner to list the items as they were placed in the fridge. However, due to the
+          lack of a Raspberry Pi, we decided to use a barcode scanner linked to an Express app with EJS instead.
+        </p>
+      </div>
+    </div>
+    <!-- Avgangsutstilling 2023 -->
+    <div id="section3" class="flex h-[500px] bg-gradient-to-b from-[#f58150] to-[#283618] p-10 items-center">
+      <div
+        class="px-6 py-4 bg-[url('assets/shapesAU.svg')] mr-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
+        <h3 class="text-center text-gray-50 text-3xl mb-2">Project 2: Avgangsutstilling 2023</h3>
+        <p class="text-gray-50">
+          As part of the frontend team for the website "Avgangsutstilling 2023" (Graduation Exhibition 2023), I had an
+          important task of effectively showcasing the design that other classes had worked on and prototyped. My main
+          responsibility was to enhance the layout, appearance, and animations on certain pages to make the site as
+          user-friendly as possible.
+        </p>
+        <p class="text-gray-50">
+          The website was developed using technologies such as Next.js, TypeScript, MDX, and Tailwind CSS. It was a
+          collaborative process involving the Bachelor's programs in Web Development, Interaction Design, and Graphic
+          Design.
+        </p>
+        <br>
+        <p class="text-gray-50">
+          Disclaimer: I was only part of the design process for Avgangsutstilling 2023. If you view this later than 2023
+          the page might look different. Add /historisk after the url to access the previous versions of the website.
+          Then
+          click 2023.
+        </p>
+      </div>
+      <img src="assets/avgangsutstilling.jpg" alt="Image of the front page of Avgangsutstilling 2023" class="h-[300px]">
+    </div>
+    <!-- Bachelor, Yggdrasil -->
+    <div id="section4" class="flex h-[500px] bg-gradient-to-b from-[#283618] to-black p-10  items-center">
+      <img src="assets/mapYggdrasil.jpg" alt="Image of my first project Smart Fridge" class="h-[300px]">
+      <div
+        class="px-6 py-4 bg-[url('assets/shapesBY.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
+        <h3 class="text-center text-gray-50 text-3xl mb-2">Project 3: Bachelor, Yggdrasil</h3>
+        <p class="text-gray-50">
+          As part of my bachelor's thesis, my group and I developed an app over a semester period. The app uses local
+          stories to engage people in sharing and spreading love for their hometowns and also motivates visitors to
+          explore what it means to be a pilgrim. The solution includes a section dedicated to people interested in
+          hiking a pilgrimage trail, where they can find useful information to make the journey easier. Yggdrasil also
+          features a map page where users can add markers for attractions and stories they want to share with others.
+        </p> 
+        <br>
+        <p class="text-gray-50">
+          The website was developed using React.js, JavaScript, JSX, and Tailwind CSS.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- <script>
+  // Hide the navigation content initially
+  var navMenu = document.getElementById('navMenu');
+  var expandIcon = navMenu.querySelector('img');
+
+  navMenu.classList.add('hidden');
+
+  // Toggle the navigation content and icon when clicked
+  expandIcon.addEventListener('click', function () {
+    navMenu.classList.toggle('hidden');
+    expandIcon.classList.toggle('rotate-180');
+  });
+</script> -->
+
+</html>
