@@ -8,20 +8,22 @@
   <title>Mons Stenbråten Portfolio</title>
   <link rel="icon" href="assets/MonsStenbråten.jpg">
   <link rel="stylesheet" href="output.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="index.js"></script>
   <style>
-    #navMenu {
+/*     #navMenu {
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
       border-radius: 0 50px 50px 0;
-    }
+    } */
   </style>
 </head>
 
 <body>
   <div class="flex min:h-fit">
     <!-- Nav Menu -->
-    <div class="flex bg-[#56082c]/90 pl-2 pr-1 hover:pr-2 py-5" id="navMenu">
+<!--     <div class="flex bg-[#56082c]/90 pl-2 pr-1 hover:pr-2 py-5" id="navMenu">
       <div class="divide-y">
         <div class="hover:scale-110 transition-transform ease-in-out">
           <a href="#section1" class="text-gray-50 ">About Me</a>
@@ -39,14 +41,40 @@
       <div class="absolute top-1/2 right-1 transform -translate-y-1/2" id="expandIcon">
         <img src="assets/drag.png" alt="Icon that shows that the div can expand" class="h-[40px]">
       </div>
+    </div> -->
+
+    <div id="menu">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="menu-inner">
+        
+        <ul>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section1" class="text-gray-50">About Me</a></li>
+          <div class="h-px w-1/2 bg-white"></div>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section2" class="text-gray-50">Smart Fridge</a></li>
+          <div class="h-px w-1/2 bg-white"></div>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section3" class="text-gray-50">Avgangsutstilling 2023</a></li>
+          <div class="h-px w-1/2 bg-white"></div>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section4" class="text-gray-50">Bachelor, Yggdrasil</a></li>
+        </ul>
+      </div>
+    
+    
+      
+      <svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
+      </svg>
     </div>
 
     <!-- Content -->
     <div class="flex-grow bg-[url('assets/pc.jpg')] h-[900px] bg-cover p-4 shadow-[0_10px_3px_0_rgba(0,0,0,0.75)]">
-      <h1 class="text-gray-50 text-center text-6xl">Porfolio</h1>
-      <h2 class="text-gray-50 text-center text-4xl mb-5">Mons Stenbråten</h2>
+      <p class="text-gray-50 text-center text-6xl">Porfolio</p>
+      <p class="text-gray-50 text-center text-4xl mb-5">Mons Stenbråten</p>
       <img src="assets/MonsStenbråten.jpg" alt="Image of me, Mons Stenbråten"
-        class="flex h-[250px] rounded-full m-auto">
+        class="flex h-[250px] rounded-full m-auto ripples">
       <div class="bg-[#56082c]/90 w-1/2 mx-auto mt-4 p-2 rounded">
         <h3 class="text-gray-50 text-center text-3xl mb-2">Fullstack Developer</h3>
         <p class="text-gray-50 text-center text-2xl mb-5">HTML, CSS, JavaScript, XML, React, MySQL, PHP</p>
@@ -83,7 +111,7 @@
       </div>
     </div>
     <!-- Smart Fridge -->
-    <div id="section2" class="flex h-[500px] bg-gradient-to-b from-[#256765] to-[#f58150] p-10  items-center">
+    <div id="section2" class="flex h-[500px] bg-gradient-to-b from-[#256765] to-[#f58150] p-10 items-center ml-10">
       <img src="assets/smartFridge.jpg" alt="Image of my first project Smart Fridge" class="h-[300px]">
       <div
         class="px-6 py-4 bg-[url('assets/shapesSF.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
@@ -99,7 +127,7 @@
       </div>
     </div>
     <!-- Avgangsutstilling 2023 -->
-    <div id="section3" class="flex h-[500px] bg-gradient-to-b from-[#f58150] to-[#283618] p-10 items-center">
+    <div id="section3" class="flex h-[500px] bg-gradient-to-b from-[#f58150] to-[#283618] p-10 items-center ml-10">
       <div
         class="px-6 py-4 bg-[url('assets/shapesAU.svg')] mr-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
         <h3 class="text-center text-gray-50 text-3xl mb-2">Project 2: Avgangsutstilling 2023</h3>
@@ -125,7 +153,7 @@
       <img src="assets/avgangsutstilling.jpg" alt="Image of the front page of Avgangsutstilling 2023" class="h-[300px]">
     </div>
     <!-- Bachelor, Yggdrasil -->
-    <div id="section4" class="flex h-[500px] bg-gradient-to-b from-[#283618] to-black p-10  items-center">
+    <div id="section4" class="flex h-[500px] bg-gradient-to-b from-[#283618] to-black p-10  items-center ml-10">
       <img src="assets/mapYggdrasil.jpg" alt="Image of my first project Smart Fridge" class="h-[300px]">
       <div
         class="px-6 py-4 bg-[url('assets/shapesBY.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
