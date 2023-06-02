@@ -11,7 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="index.js"></script>
   <style>
-/*     #navMenu {
+    /*     #navMenu {
       position: fixed;
       top: 50%;
       transform: translateY(-50%);
@@ -23,7 +23,7 @@
 <body>
   <div class="flex min:h-fit">
     <!-- Nav Menu -->
-<!--     <div class="flex bg-[#56082c]/90 pl-2 pr-1 hover:pr-2 py-5" id="navMenu">
+    <!--     <div class="flex bg-[#56082c]/90 pl-2 pr-1 hover:pr-2 py-5" id="navMenu">
       <div class="divide-y">
         <div class="hover:scale-110 transition-transform ease-in-out">
           <a href="#section1" class="text-gray-50 ">About Me</a>
@@ -49,36 +49,41 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div class="menu-inner">
-        
+
+      <!-- Nav menu -->
+      <div class="menu-inner z-10">
         <ul>
-          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section1" class="text-gray-50">About Me</a></li>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section1" class="text-gray-50">About
+              Me</a></li>
           <div class="h-px w-1/2 bg-white"></div>
-          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section2" class="text-gray-50">Smart Fridge</a></li>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section2" class="text-gray-50">Smart
+              Fridge</a></li>
           <div class="h-px w-1/2 bg-white"></div>
-          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section3" class="text-gray-50">Avgangsutstilling 2023</a></li>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section3"
+              class="text-gray-50">Avgangsutstilling 2023</a></li>
           <div class="h-px w-1/2 bg-white"></div>
-          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section4" class="text-gray-50">Bachelor, Yggdrasil</a></li>
+          <li class="hover:scale-110 transition-transform ease-in-out"><a href="#section4"
+              class="text-gray-50">Bachelor, Yggdrasil</a></li>
         </ul>
       </div>
-    
-    
-      
-      <svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
+
+
+      <!-- Blob that moves when cursor is close to it -->
+      <svg version="1.1" id="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
       </svg>
     </div>
 
     <!-- Content -->
-    <div class="flex-grow bg-[url('assets/pc.jpg')] h-[900px] bg-cover p-4 shadow-[0_10px_3px_0_rgba(0,0,0,0.75)]">
-      <p class="text-gray-50 text-center text-6xl">Porfolio (Work in progress)</p>
-      <p class="text-gray-50 text-center text-4xl mb-5">Mons Stenbråten</p>
+    <div class="flex-grow bg-[url('assets/pc.jpg')] h-[900px] bg-cover p-4 shadow-[0_10px_3px_0_rgba(0,0,0,0.75)] ml-12 md:ml-0">
+      <p class="text-gray-50 text-center text-2xl md:text-6xl">Porfolio</p>
+      <p class="text-gray-50 text-center text-xl md:text-4xl mb-5">Mons Stenbråten</p>
       <img src="assets/MonsStenbråten.jpg" alt="Image of me, Mons Stenbråten"
-        class="flex h-[250px] rounded-full m-auto ripples">
-      <div class="bg-[#56082c]/90 w-1/2 mx-auto mt-4 p-2 rounded">
-        <h3 class="text-gray-50 text-center text-3xl mb-2">Fullstack Developer</h3>
-        <p class="text-gray-50 text-center text-2xl mb-5">HTML, CSS, JavaScript, XML, React, MySQL, PHP</p>
-        <p class="text-gray-50 text-center text-2xl mb-2">Contact Me:</p>
+        class="flex h-[150px] md:h-[250px] rounded-full m-auto ripples">
+      <div class="bg-[#56082c]/90 w-3/4 md:w-1/2 mx-auto mt-4 p-2 rounded">
+        <h3 class="text-gray-50 text-center md:text-3xl mb-2">Fullstack Developer</h3>
+        <p class="text-gray-50 text-center md:text-2xl mb-5">HTML, CSS, JavaScript, XML, React, MySQL, PHP</p>
+        <p class="text-gray-50 text-center md:text-2xl mb-2">Contact Me:</p>
         <div class="flex justify-center">
           <a href="mailto:mons.stenbraaten@hotmail.com">
             <img src="assets/email.png" alt="My Email" class="transition ease-in-out hover:scale-110 mx-2">
@@ -93,9 +98,9 @@
 
   <div style="height: 1500px;">
     <!-- About Me -->
-    <div id="section1" class="h-[500px] bg-gradient-to-b from-black to-[#256765] p-10">
-      <div class="w-1/2 mx-auto">
-        <h3 class="text-center text-gray-50 text-3xl mb-2">About me:</h3>
+    <div id="section1" class="h-[500px] bg-gradient-to-b from-black to-[#26394E] p-10">
+      <div class="w-full md:w-1/2 ml-9 md:mx-auto">
+        <h3 class="text-center text-gray-50 md:text-3xl mb-2">About me:</h3>
         <p class="text-gray-50">
           Hello, my name is Mons, I am 22 years old, and I come from Brandbu, Hadeland. I am currently in my final year
           of my bachelor's degree in web development (BWU) at NTNU in Gjøvik. Since I was young, I have always felt a
@@ -110,12 +115,72 @@
         </p>
       </div>
     </div>
+
+    <!--     <div class="">
+      <form action="">
+        <input type="radio" name="slider" id="sitem-1" checked>
+        <input type="radio" name="slider" id="sitem-2">
+      </form>
+      <div class="cards" id="section2">
+        <label class="card" for="sitem-1" id="spart1">
+          <img src="assets/smartFridge.jpg" alt="Image of my first project Smart Fridge" class="carouselimage">
+        </label>
+        <label class="card" for="sitem-2" id="spart2">
+          <div
+            class="px-6 py-4 bg-[url('assets/shapesSF.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
+            <h3 class="text-center text-gray-50 text-3xl mb-2">Project 1: Smartfridge</h3>
+            <p class="text-gray-50">
+              I created this project together with my group as a prototype, along with a proof of concept website. It
+              aimed
+              to simulate an app that could be used to scan items placed in the refrigerator. The idea was that by being
+              able to see an overview of the refrigerator's contents, one could limit purchases of items already present
+              in
+              the fridge that might have been forgotten. This could help reduce food waste. Originally, the plan was to
+              use
+              a Raspberry Pi connected to a scanner to list the items as they were placed in the fridge. However, due to
+              the
+              lack of a Raspberry Pi, we decided to use a barcode scanner linked to an Express app with EJS instead.
+            </p>
+          </div>
+        </label>
+      </div>
+
+      <div class="mt-[500px]">
+        <form action="">
+          <input type="radio" name="slider" id="aitem-1" checked>
+          <input type="radio" name="slider" id="aitem-2">
+        </form>
+        <div class="cards" id="section3">
+          <label class="card" for="aitem-1" id="apart1">
+            <img src="assets/smartFridge.jpg" alt="Image of my first project Smart Fridge" class="carouselimage">
+          </label>
+          <label class="card" for="aitem-2" id="apart2">
+            <div
+              class="px-6 py-4 bg-[url('assets/shapesSF.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
+              <h3 class="text-center text-gray-50 text-3xl mb-2">Project 1: Smartfridge</h3>
+              <p class="text-gray-50">
+                I created this project together with my group as a prototype, along with a proof of concept website. It
+                aimed
+                to simulate an app that could be used to scan items placed in the refrigerator. The idea was that by
+                being
+                able to see an overview of the refrigerator's contents, one could limit purchases of items already
+                present in
+                the fridge that might have been forgotten. This could help reduce food waste. Originally, the plan was
+                to use
+                a Raspberry Pi connected to a scanner to list the items as they were placed in the fridge. However, due
+                to the
+                lack of a Raspberry Pi, we decided to use a barcode scanner linked to an Express app with EJS instead.
+              </p>
+            </div>
+          </label>
+        </div> -->
+
     <!-- Smart Fridge -->
-    <div id="section2" class="flex h-[500px] bg-gradient-to-b from-[#256765] to-[#f58150] p-10 items-center ml-10">
-      <img src="assets/smartFridge.jpg" alt="Image of my first project Smart Fridge" class="h-[300px]">
+    <div id="section2" class="flex flex-col-reverse my-10 md:my-0 md:flex-row p-10 items-center ml-10 lg:justify-center">
+      <img src="assets/smartFridge.jpg" alt="Image of my first project Smart Fridge" class="md:h-[300px]">
       <div
-        class="px-6 py-4 bg-[url('assets/shapesSF.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
-        <h3 class="text-center text-gray-50 text-3xl mb-2">Project 1: Smartfridge</h3>
+        class="px-6 py-4 bg-[#56082c]/90 md:ml-5 mb-10 md:mb-0 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] min-h-[300px] lg:w-1/2">
+        <h3 class="text-center text-gray-50 md:text-3xl mb-2">Project 1: Smartfridge</h3>
         <p class="text-gray-50">
           I created this project together with my group as a prototype, along with a proof of concept website. It aimed
           to simulate an app that could be used to scan items placed in the refrigerator. The idea was that by being
@@ -127,10 +192,10 @@
       </div>
     </div>
     <!-- Avgangsutstilling 2023 -->
-    <div id="section3" class="flex h-[500px] bg-gradient-to-b from-[#f58150] to-[#283618] p-10 items-center ml-10">
+    <div id="section3" class="flex flex-col my-10 md:my-0 md:flex-row p-10 items-center ml-10 lg:justify-center">
       <div
-        class="px-6 py-4 bg-[url('assets/shapesAU.svg')] mr-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
-        <h3 class="text-center text-gray-50 text-3xl mb-2">Project 2: Avgangsutstilling 2023</h3>
+        class="px-6 py-4 bg-[#56082c]/90 md:mr-5 mb-10 md:mb-0 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] min-h-[300px] lg:w-1/2">
+        <h3 class="text-center text-gray-50 md:text-3xl mb-2">Project 2: Avgangsutstilling 2023</h3>
         <p class="text-gray-50">
           As part of the frontend team for the website "Avgangsutstilling 2023" (Graduation Exhibition 2023), I had an
           important task of effectively showcasing the design that other classes had worked on and prototyped. My main
@@ -150,21 +215,21 @@
           click 2023.
         </p>
       </div>
-      <img src="assets/avgangsutstilling.jpg" alt="Image of the front page of Avgangsutstilling 2023" class="h-[300px]">
+      <img src="assets/avgangsutstilling.jpg" alt="Image of the front page of Avgangsutstilling 2023" class="md:h-[300px]">
     </div>
     <!-- Bachelor, Yggdrasil -->
-    <div id="section4" class="flex h-[500px] bg-gradient-to-b from-[#283618] to-black p-10  items-center ml-10">
-      <img src="assets/mapYggdrasil.jpg" alt="Image of my first project Smart Fridge" class="h-[300px]">
+    <div id="section4" class="flex flex-col-reverse my-10 md:my-0 md:flex-row p-10 items-center ml-10 lg:justify-center">
+      <img src="assets/yggdrasilMockup.png" alt="Image of my first project Smart Fridge" class="md:h-[300px]">
       <div
-        class="px-6 py-4 bg-[url('assets/shapesBY.svg')] ml-5 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] h-[400px]">
-        <h3 class="text-center text-gray-50 text-3xl mb-2">Project 3: Bachelor, Yggdrasil</h3>
+        class="px-6 py-4 bg-[#56082c]/90 md:ml-5 mb-10 md:mb-0 rounded border-white border-2 shadow-[10px_10px_30px_0_rgba(0,0,0,0.75)] min-h-[300px] lg:w-1/2">
+        <h3 class="text-center text-gray-50 md:text-3xl mb-2">Project 3: Bachelor, Yggdrasil</h3>
         <p class="text-gray-50">
           As part of my bachelor's thesis, my group and I developed an app over a semester period. The app uses local
           stories to engage people in sharing and spreading love for their hometowns and also motivates visitors to
           explore what it means to be a pilgrim. The solution includes a section dedicated to people interested in
           hiking a pilgrimage trail, where they can find useful information to make the journey easier. Yggdrasil also
           features a map page where users can add markers for attractions and stories they want to share with others.
-        </p> 
+        </p>
         <br>
         <p class="text-gray-50">
           The website was developed using React.js, JavaScript, JSX, and Tailwind CSS.
